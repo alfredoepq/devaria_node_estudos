@@ -12,20 +12,21 @@ readline.question('Em que ano você nasceu? ', idade => {
     console.log('FINISH');
   } else {
     readline.question('Você tem habilitação? (Sim/Não)', temHabilitacao => {
-      if (!(temHabilitacao.toUpperCase() === 'SIM')) {
-        console.log('Você não tem habilitação')
+      if (!(temHabilitacao.toUpperCase() === 'SIM' || temHabilitacao.toUpperCase().substring(0, 1) === 'Y')) {
+        console.log('Você não tem habilitação, não pode participar')
+        console.log('Fim');
       } else {
         readline.question('Qual o seu nome? ', nome => {
           switch (nome) {
             case 'Douglas' :
               console.log('Seja bem vindo');
-              console.log('FINISH');
+              console.log('Fim');
               break;
             case 'Gilberto':
               break;
             default:
               console.log('Desculpa mas não encontramos seu nome na lista')
-              console.log('FINISH');
+              console.log('Fim');
               break;
           }
         })
