@@ -1,0 +1,19 @@
+{
+  "name": "7-hello_npm",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "moment",
+    ".gitignore"
+  ],
+  "author": "Alfredo",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
